@@ -1,20 +1,27 @@
 namespace CompositeDemo
 {
-    public class Team : OfficeComponent()
+    public class Team : CompanyPart
     {
+        //constructor
+        public Team(string componentName, int numOfPens, float moneySpentOnPens) : base(componentName,numOfPens,moneySpentOnPens)
+        {
+            ComponentName = componentName;
+            NumOfPens = numOfPens;
+            MoneySpentOnPens = moneySpentOnPens;
+        }
         //get and set methods
         public override int GetNumOfPens()
         {
-            return _numOfPens;
+            return NumOfPens;
         }
 
         public override float GetMoneySpentOnPens()
         {
-            return _moneySpentOnPens;
+            return MoneySpentOnPens;
         }
         
         //pattern specific methods
-        public override bool isComposite()
+        public override bool IsComposite()
         {
             return false;
         }

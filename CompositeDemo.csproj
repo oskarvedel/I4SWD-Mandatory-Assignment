@@ -38,8 +38,10 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Company.cs" />
         <Compile Include="Department.cs" />
-        <Compile Include="OfficeComponent.cs" />
+        <Compile Include="Office.cs" />
+        <Compile Include="CompanyPart.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Team.cs" />

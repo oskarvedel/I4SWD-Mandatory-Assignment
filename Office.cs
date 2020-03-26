@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace CompositeDemo
 {
-    class Department : CompanyPart
+    class Office : CompanyPart
     {
         //private variables
         List<CompanyPart> _children = new List<CompanyPart>();
         
         //constructor
-        public Department(string componentName, int numOfPens, float moneySpentOnPens) : base(componentName,numOfPens,moneySpentOnPens)
+        public Office(string componentName, int numOfPens, float moneySpentOnPens) : base(componentName,numOfPens,moneySpentOnPens)
         {
             ComponentName = componentName;
             NumOfPens = numOfPens;
