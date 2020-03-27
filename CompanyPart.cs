@@ -18,7 +18,6 @@ namespace CompositeDemo
         }
         
         //get and set methods
-
         public string GetComponentName()
         {
             return ComponentName;
